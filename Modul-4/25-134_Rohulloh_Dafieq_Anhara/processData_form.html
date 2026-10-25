@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Data Diri</title>
+</head>
+<body>
+
+    <form action="processData.php" method="POST">
+        <fieldset>
+            <legend>Data Diri</legend>
+
+            <p>
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="kata_sandi">Kata Sandi:</label><br>
+                <input type="password" id="kata_sandi" name="kata_sandi" required>
+            </p>
+
+            <p>
+                <label for="detail_alamat">Detail Alamat:</label><br>
+                <textarea id="detail_alamat" name="detail_alamat" rows="3" cols="30"></textarea>
+            </p>
+
+            <p>
+                <label for="kota">Kota:</label><br>
+                <select id="kota" name="kota">
+                    <option value="">-- Pilih Kotamu --</option>
+                    <option value="Jakarta">Jakarta</option>
+                    <option value="Bogor">Bogor</option>
+                    <option value="Depok">Depok</option>
+                    <option value="Tangerang">Tangerang</option>
+                    <option value="Bekasi">Bekasi</option>
+                </select>
+            </p>
+
+            <input type="hidden" name="negara" value="Indonesia">
+
+            <p>
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" id="pria" name="jenis_kelamin" value="Pria">
+                <label for="pria">Pria</label>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="Wanita">
+                <label for="wanita">Wanita</label>
+            </p>
+
+            <p>
+                <label for="vegetarian">Vegetarian?</label>
+                <input type="checkbox" id="vegetarian" name="vegetarian" value="Ya">
+            </p>
+
+            <p>
+                <input type="submit" name="kirim" value="Kirim">
+                <input type="reset" name="reset" value="Riset">
+            </p>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
